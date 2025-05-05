@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<title>إبلاغ عن طفل متشرد</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>إبلاغ عن طفل متشرد</h1>
+		<p>أداة للتبليغ عن الأطفال المشردين، ومساعدة جهات إيواء المشردين للوصول إليهم.</p>
+		
+		<form action="submit.php" method="post" enctype="multipart/form-data">
+			<label for="location">الموقع:</label>
+			<input type="text" id="location" name="location" placeholder="أدخل العنوان أو اسم المكان" required>
+
+			<label for="description">وصف الحالة:</label>
+			<textarea id="description" name="description" rows="5" placeholder="صف الطفل أو الحالة التي رأيتها" required></textarea>
+
+			<label for="image">صورة (اختياري):</label>
+			<input type="file" id="image" name="image" accept="image/*">
+
+			<label for="contact">وسيلة تواصل (بريد أو رقم):</label>
+			<input type="text" id="contact" name="contact" placeholder="اختياري - للتواصل معك عند الحاجة">
+
+			<button type="submit">إرسال</button>
+		</form>
+	</div>
+</body>
+</html>
